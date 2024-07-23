@@ -1,0 +1,29 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "bd977aaff0d3f02d540c56bfac3d845e"
+name = "descope-login"
+handle = "descope-login"
+application_url = "https://desperate-himself-director-denver.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "tuantt-store.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = ""
+
+[auth]
+redirect_urls = [
+  "https://desperate-himself-director-denver.trycloudflare.com/auth/callback",
+  "https://desperate-himself-director-denver.trycloudflare.com/auth/shopify/callback",
+  "https://desperate-himself-director-denver.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-07"
+
+[pos]
+embedded = false

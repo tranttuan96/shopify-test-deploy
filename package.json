@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "run-p -sr vite:dev shopify:dev",
     "build": "run-s vite:build shopify:build",
-    "deploy": "run-s vite:build cleanup shopify:deploy",
+    "deploy": "run-s vite:build cleanup",
     "shopify": "shopify",
     "shopify:build": "shopify app build",
     "shopify:dev": "shopify app dev",
@@ -18,6 +18,7 @@
     "cleanup": "rimraf --glob extensions/*/assets/*.{json,geetkeep}"
   },
   "dependencies": {
+    "@descope/react-sdk": "^2.0.53",
     "@shopify/app": "^3.48.0",
     "@shopify/cli": "^3.48.0",
     "@vitejs/plugin-react": "^4.0.3",
